@@ -18,6 +18,7 @@ export class CreateBox {
         this.titleText = name;
         this.title = document.createElement("p");
         this.title.textContent = name;
+        this.title.style.fontWeight = "900"
         this.title.className = "title";
         this.box.appendChild(this.title);
     }

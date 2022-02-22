@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+}
+.videoframe iframe {
+    position: absolute;
+    width: 530px;
+    height: 99%;
+    right: -2px;
+    top: -2px;
+    border: 3px solid black;
+    overflow: hidden;
+}
+
+.videoframe .lectureinfo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+
+.videoframe {
+    transform: scale(1);
+    transform-origin: left;
+    position: relative;
+    width: 1230px;
+    height: 300px;
+    border: 3px solid black;
+    background-color: rgb(167, 167, 167);
+    margin: 15px;
+}
+
+.lectureinfo {
+    width: 650px;
+   
+}
+.lectureinfo p {
+    margin:0;
+    font-size: x-large;
+}
+
+.lectureinfo a {
+    display:inline;
+    float:right;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    top: 0;
+    width: 100%;
+    font-size: xx-large;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 20px 10px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.inputbox * {
+    display: inline-table;
+}
+
+.inputbox div {
+    font-size: large;
+}
