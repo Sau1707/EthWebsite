@@ -1,4 +1,4 @@
-nav {
+.topnav {
     position: sticky;
     background: var(--nav-bg);
     box-shadow: var(--nav-shadow);
@@ -11,22 +11,23 @@ nav {
     height: var(--nav-width);
 }
 
-nav a {
+.topnav a {
   color: var(--h-color);
-  margin: 1.4rem;
+  margin: 1.5rem;
   text-decoration: none;
 }
 
-nav a:hover {
+.topnav a:hover {
   text-decoration: underline;
 }
 
 /* Test search button */
 .box{
   position: absolute;
-  top: 50%;
+  margin: 1.5rem;
+  top: 0;
   right: 0;
-  transform: translate(0,-50%);
+  /*transform: translate(0,-50%);*/
 }
 
 .input {
@@ -58,7 +59,7 @@ nav a:hover {
   background: var(--h-color);
 }
 
-i{
+.box i{
   position: absolute;
   top: 50%;
   right: 15px;
@@ -71,4 +72,56 @@ i{
 .box:hover i{
   opacity: 0;
   z-index: -1;
+}
+
+
+/* 
+    MEDIA 
+*/
+
+
+.mobile-nav {
+  display: none;
+}
+@media (max-width: 768px) {
+  .topnav {
+    display: none;
+  }
+
+  .mobile-nav {
+    position: sticky;
+    background: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    z-index: 999;
+    font-size: 1.4rem;
+    border-bottom: var(--card-border);
+    height: var(--nav-width);
+  }
+}
+
+
+.mobile-nav .i {
+  margin: 1.4rem;
+  color: var(--h-color);
+}
+
+.mobile-nav #myLinks {
+  display: none;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: var(--nav-bg);
+  position: relative;
+}
+
+.mobile-nav a {
+  color: var(--h-color);
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 26px;
+  display: block;
 }
