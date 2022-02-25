@@ -23,7 +23,7 @@
 
 @media (max-width: 768px) {
     .card  {
-        max-width: 100%;
+        max-width: 90%;
         width: 100%;
         display: flex;
     }

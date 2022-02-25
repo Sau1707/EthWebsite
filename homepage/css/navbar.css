@@ -24,7 +24,9 @@
 /* Test search button */
 .box{
   position: absolute;
-  margin: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  margin-right: 0.5rem;
   top: 0;
   right: 0;
   /*transform: translate(0,-50%);*/
@@ -62,7 +64,7 @@
 .box i{
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 0px;
   transform: translate(-50%,-50%);
   font-size: 1.4rem;
   color: var(--h-color);
@@ -74,11 +76,9 @@
   z-index: -1;
 }
 
-
 /* 
     MEDIA 
 */
-
 
 .mobile-nav {
   display: none;
