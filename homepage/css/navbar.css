@@ -1,0 +1,74 @@
+nav {
+    position: sticky;
+    background: var(--nav-bg);
+    box-shadow: var(--nav-shadow);
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    z-index: 999;
+    font-size: 1.4rem;
+    border-bottom: var(--card-border);
+    height: var(--nav-width);
+}
+
+nav a {
+  color: var(--h-color);
+  margin: 1.4rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Test search button */
+.box{
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(0,-50%);
+}
+
+.input {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(0,-50%);
+  border-radius: 10px;
+  right: 15px;
+  color: var(--nav-bg);
+  font-size: large;
+  text-decoration: none;
+  border: var(--nav-bg);
+  padding: 10px;
+  width: 80px;
+  height: 60px;
+  font-family: Comic Sans MS;
+  font-size: 26px;
+  background: var(--nav-bg);
+  transition: 1s;
+  border-radius: 30px;
+  padding-left: 20px;
+  outline:none;
+}
+
+.box:hover input{
+  transition: .5s;
+  width: 250px;
+  background: var(--h-color);
+}
+
+i{
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translate(-50%,-50%);
+  font-size: 1.4rem;
+  color: var(--h-color);
+  transition: .2s;
+}
+
+.box:hover i{
+  opacity: 0;
+  z-index: -1;
+}

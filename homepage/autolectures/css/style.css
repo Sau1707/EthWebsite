@@ -1,28 +1,8 @@
 body {
     margin: 0;
 }
-.videoframe iframe {
-    position: absolute;
-    width: 530px;
-    height: 99%;
-    right: -2px;
-    top: -2px;
-    border: 3px solid black;
-    overflow: hidden;
-    border-radius: 10px 25px 25px 10px;
-}
 
-.videoframe iframe:fullscreen {
-    border-radius: 0; 
-}
-
-.videoframe .lectureinfo {
-    position: absolute;
-    left: 20px;
-    top: 20px;
-}
-
-
+/* Box the informations */
 .videoframe {
     transform: scale(1);
     transform-origin: left;
@@ -42,20 +22,39 @@ body {
     transform: translateY(-7px);
 }
 
-.lectureinfo {
-    width: 650px;
-   
+.videoframe iframe {
+    position: absolute;
+    width: 530px;
+    height: 99%;
+    right: -2px;
+    top: -2px;
+    border: 3px solid black;
+    overflow: hidden;
+    border-radius: 10px 25px 25px 10px;
 }
-.lectureinfo p {
+
+.videoframe iframe:fullscreen {
+    border-radius: 0; 
+}
+
+.videoframe .lectureinfo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 650px;
+}
+
+.videoframe .lectureinfo p {
     margin:0;
     font-size: x-large;
 }
 
-.lectureinfo a {
+.videoframe .lectureinfo a {
     display:inline;
     float:right;
 }
 
+/* Beta title */
 ul {
     list-style-type: none;
     margin: 0;
@@ -68,8 +67,9 @@ ul {
     font-size: xx-large;
 }
 
+/* Loading box */
 input[type="file"] {
-    display: none;
+    display: block;
 }
 
 .custom-file-upload {
@@ -77,9 +77,25 @@ input[type="file"] {
     display: inline-block;
     padding: 20px 10px;
     cursor: pointer;
-    margin: 10px;
 }
 
+.inputbox {
+    width: 100%;
+    height: 400px;
+    background: rgb(89, 81, 255);
+    border: 2px solid rgb(0, 0, 0);
+    transform: scale(1);
+    transform-origin: left;
+    position: relative;
+    width: 1230px;
+    height: 300px;
+    color: black;
+    border: 3px solid black;
+    background-color: rgb(167, 167, 167);
+    border-radius: 25px;
+    margin: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.836);
+}
 .inputbox * {
     display: inline-table;
 }
@@ -87,3 +103,19 @@ input[type="file"] {
 .inputbox div {
     font-size: large;
 }
+
+#dropdiv.highlight {
+    border-color: rgb(255, 0, 0);
+    filter: none;
+  }
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.offocus > *:not(#dropdiv) {
+    filter: blur(3px);
+  }

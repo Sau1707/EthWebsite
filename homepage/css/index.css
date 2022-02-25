@@ -1,13 +1,29 @@
-.title {
-  position: relative;
-  margin: initial;
-  font-size: 1.4vw;
-  margin: 0px;
-}
-
-.description {
-  font-size: 0.95vw;
+:root {
+  --gray0: #f8f8f8;
+  --gray1: #dbe1e8;
+  --gray2: #b2becd;
+  --gray3: #6c7983;
+  --gray4: #454e56;
+  --gray5: #2a2e35;
+  --gray6: #12181b;
 }
 
 body {
+  background: var(--gray6);
+  --background-opacity: rgba(18,24,27,0.58);
+  --text-color: var(--gray2);
+  --h-color: #fff;
+  --nav-shadow: 4px 0 10px -3px #010101;
+  --card-shadow: 0 4px 8px rgba(0,0,0,0.38);
+  --toc-shadow: rgba(0,0,0,0.7) 0px 10px 20px 0px;
+  --nav-bg: var(--gray5);
+  --tag-bg: var(--gray4);
+  --code-bg: #22262f;
+  --card-bg: var(--gray5);
+  --overlay-bg: rgba(0,0,0,0.9);
+  --h-border: 2px dashed var(--nav-bg);
+  --card-border: 1px solid var(--nav-bg);
+  --card-radius: 0.25em;
+  transition: all .3s ease;
+  margin: 0;
 }

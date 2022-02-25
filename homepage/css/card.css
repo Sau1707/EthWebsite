@@ -1,0 +1,63 @@
+.row-max {
+    top: 1em;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 1em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50px,400px));
+}
+
+.card-course {
+    max-width: 400px;
+    max-height: 200px;
+    height: 200px;
+    text-align: center;
+}
+.card, .card:hover {
+    transition: transform .3s;
+}
+
+@media (max-width: 768px) {
+    .card  {
+        max-width: 100%;
+        width: 100%;
+        display: flex;
+    }
+}
+
+.card {
+    background: var(--card-bg);
+    color: var(--text-color);
+    padding: 0;
+    box-shadow: var(--card-shadow);
+    display: inline-flex;
+    flex-direction: column;
+    margin: 0 0 1em;
+    width: 100%;
+    transform: translateY(0);
+    border-radius: var(--card-radius);
+}
+
+.card .card-content {
+    display: block;
+    padding: 1em;
+}
+
+.title {
+    color: var(--gray0);
+    margin-top: 15px;
+    margin-bottom: 6px;
+    font-size:xx-large;
+}
+
+.description {
+    color: aliceblue;
+    margin-top: 0;
+    font-size: large;
+    margin-left: 10px;
+    margin-right: 10px;
+}
